@@ -40,7 +40,7 @@
         flex-direction: column;
         padding: 0 10px;
     }
-    .box {
+    .color_r .box {
         width: 100%;
     }
 }

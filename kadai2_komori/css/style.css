@@ -1,0 +1,86 @@
+@charset "utf-8";
+.container {
+    max-width: 960px;
+    margin: 50px auto;
+}
+
+.color_b,
+.color_r {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.color_r {
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+
+.color_b .box {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(94, 140, 209);
+}
+
+.color_r .box {
+    /* width: 300px; */
+    width: 31%;
+    height: 300px;
+    background-color: rgb(190, 68, 125);
+}
+
+
+/* ヘッダー_グローバルナビゲーション */
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;
+    color: #444;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li {
+    border-right: 1px solid #444444;
+    padding: 6px 20px;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+@media screen and (max-width: 767px) {
+    .color_b,
+    .color_r {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .color_r .box,
+    .color_b .box {
+        width: 100%;
+    }
+    .header,
+    .menu {
+        display: block;
+        text-align: center;
+    }
+    li {
+        border-bottom: 1px solid #444;
+        border-right: none;
+        margin-top: 10px;
+    }
+}
