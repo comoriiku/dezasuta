@@ -1,0 +1,71 @@
+@charset "utf-8";
+body {
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;
+    color: #444;
+    background-color: #eee;
+}
+
+img {
+    width: 100%;
+    /* object-fit: fill; */
+}
+
+.container {
+    max-width: 960px;
+    margin: 80px auto;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(19, 116, 99);
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.caption {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(19, 116, 99);
+    position: relative;
+    padding-left: 18px;
+}
+
+.caption::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 26px;
+    background: rgb(19, 116, 99);
+    position: absolute;
+    left: 3px;
+    top: 0;
+    margin: auto;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+li {
+    background-color: #fff;
+}
+
+.box {
+    padding: 10px;
+}
+
+.text {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    ul {
+        flex-direction: column;
+    }
+    .container {
+        margin: 0 10px;
+    }
+}
