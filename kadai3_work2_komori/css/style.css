@@ -29,13 +29,14 @@ h1 {
     color: rgb(19, 116, 99);
     position: relative;
     padding-left: 18px;
+    padding-top: 1px;
 }
 
 .caption::before {
     content: "";
     display: block;
     width: 10px;
-    height: 26px;
+    height: 28px;
     background: rgb(19, 116, 99);
     position: absolute;
     left: 3px;
@@ -51,6 +52,7 @@ ul {
 
 li {
     background-color: #fff;
+    width: 32%;
 }
 
 .box {
@@ -61,9 +63,12 @@ li {
     margin-top: 10px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 400px) {
     ul {
         flex-direction: column;
+    }
+    li {
+        width: 100%;
     }
     .container {
         margin: 0 10px;
